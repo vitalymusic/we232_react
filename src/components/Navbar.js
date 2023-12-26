@@ -1,12 +1,32 @@
 import './navBar.css';
 function Navbar(){
+
+    let menu = 
+    [
+        {
+        name:"Main",
+        href:"main.html"
+        },
+        {
+            name:"About Us",
+            href:"about.html"
+        },
+        {
+            name:"Contacts Us",
+            href:"contacts.html"
+        },
+    ]
+
+
     return(
         <nav>
-            <a href="#">Item 1</a>
-            <a href="#">Item 2</a>
-            <a href="#">Item 3</a>
-            <a href="#">Item 4</a>
-            <a href="#">Item 5</a>
+            {
+                menu.map((item,index)=>{
+                    return (
+                        <a href={item.href} key={index}>{item.name}</a>
+                    )
+                })
+            }
         </nav>
     )
 }
