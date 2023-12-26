@@ -1,0 +1,12 @@
+.Users{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    
+}
+
+.Users .user img{
+    width: 300px;
+}

@@ -2,14 +2,15 @@
 
 import './App.css';
 import Navbar from './components/Navbar';
-import { Cards } from './components/Cards';
+// import { Cards } from './components/Cards';
+import { Users } from './components/Users';
 
 function App() {
   return (
     <div className='app'>
         <h1>Hello </h1>
         <Navbar></Navbar>
-        <Cards></Cards>
+        <Users></Users>
     </div>
   );
 }

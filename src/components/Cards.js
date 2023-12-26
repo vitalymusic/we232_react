@@ -16,7 +16,6 @@ export function Cards(){
     return(
         <div className='cardsDiv'>
             {   
-                
                 data.map((item,index)=>{
                     return (
                        console.log(item)
